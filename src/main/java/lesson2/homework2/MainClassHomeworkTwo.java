@@ -27,7 +27,7 @@ public class MainClassHomeworkTwo {
 
         printTextToFile(createText()); // Задача 2.
 
-        typesOfFilesInDir("C:\\Users\\HUAWEI\\java-practic23032023\\src\\main\\java\\lesson1\\homework\\MainClassHomeworkOne.java"); // Задача 3.
+        typesOfFilesInDir("C:\\Users\\HUAWEI"); // Задача 3.
 
 
     }
