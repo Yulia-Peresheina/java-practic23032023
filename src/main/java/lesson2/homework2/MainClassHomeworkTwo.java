@@ -23,11 +23,11 @@ import java.util.Scanner;
 
 public class MainClassHomeworkTwo {
     public static void main(String[] args) {
-        System.out.println("This is palindrome? " + stringIsPalindromeOrNot(inputString())); // Задача 1.
+        System.out.println("This is palindrome: " + stringIsPalindromeOrNot(inputString())); // Задача 1.
 
         printTextToFile(createText()); // Задача 2.
 
-        typesOfFilesInDir("C:\\Users\\HUAWEI"); // Задача 3.
+        typesOfFilesInDir("C:\\Users\\HUAWEI\\java-practic23032023\\src\\main\\java\\lesson1\\homework\\MainClassHomeworkOne.java"); // Задача 3.
 
 
     }
@@ -35,6 +35,7 @@ public class MainClassHomeworkTwo {
     private static void typesOfFilesInDir(String pathDir) {
         File file = new File(pathDir);
         if (! file.isDirectory()){
+            System.out.println("Not a directory!");
             return;
         }
         String [] dirListFile = file.list();
