@@ -23,7 +23,7 @@ public class MainClassLesson6 {
         cat2.changeAge();
         cat2.changeOwner("Матвеева");
         System.out.println(cat2);
-        System.out.println(cat3.);
+        System.out.println(cat3);
 
 
     }
