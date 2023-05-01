@@ -8,12 +8,16 @@ import java.util.Scanner;
 // вместо этого, необходимо повторно запросить у пользователя ввод данных.
 //Задание 2. Исправить код.
 //Задание 3. Исправить код.
+// Задание 4. Разработайте программу, которая выбросит Exception, когда
+// пользователь вводит пустую строку. Пользователю должно показаться
+// сообщение, что пустые строки вводить нельзя.
+
 public class MainClassExcep2 {
     public static void main(String[] args) {
-//        inputFloat(); //Задача1
-//        correctCode();  //Задача2
-//        correctCode2();  //Задача3
-        throwExeptionEmptyString();
+        inputFloat(); //Задача1
+        correctCode();  //Задача2
+        correctCode2();  //Задача3
+        throwExeptionEmptyString();   //Задача 4
 
     }
 
