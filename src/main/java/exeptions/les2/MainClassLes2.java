@@ -65,8 +65,9 @@ public class MainClassLes2 {
 
     private static HashMap<String,String> readTOHashMap(String file) {
         HashMap<String, String> person = new HashMap<>();
+        BufferedReader br = null;
         try{
-            BufferedReader br = new BufferedReader(new FileReader(file));
+            br = new BufferedReader(new FileReader(file));
             String line;
             while ((line = br.readLine()) != null){
                 String [] lineArray = line.split("=");
@@ -74,6 +75,14 @@ public class MainClassLes2 {
             }
         }  catch ( IOException e){
             System.out.println("Файла не существует" + e);
+        }finally {
+            try {
+                if (br != null){
+                    br.close();
+                }
+            }catch (IOException e){
+                System.out.println("Исключение при закрытии файла");
+            }
         }
         return person;
     }
